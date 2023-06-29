@@ -5,13 +5,13 @@
 
     const nascimento = parseInt(prompt(`Informe seu ano de nascimento`));
 
-    const votacao = nascimento + 16;
+    const idade = new Date().getFullYear() - nascimento;
 
-    let mensagemFinal= new Date().getFullYear() 
+    let mensagemFinal = (idade < 16) ? "Não poderá votar" : (idade >= 16) ? "Poderá votar"
+        : "Opção inválida"
+
+    alert(mensagemFinal)
 
 
 
-
-
-    
 </script>

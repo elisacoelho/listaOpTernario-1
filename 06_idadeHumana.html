@@ -7,6 +7,14 @@
     // - cães de porte médio: fator 6
     // - cães grandes: fator 7.
 
+    const idadeCao = Number(prompt(`Insira a idade do seu cão`));
+    const porteCao = prompt(`Insira o porte do seu cão (P-pequeno, M-médio ou G-grande)`).toLowerCase().trim();
 
+    let mensagemFinal = (porteCao == "p") ? "O seu cão tem " + (idadeCao * 5) + " anos" 
+        : (porteCao == "m") ? "O seu cão tem " + (idadeCao * 6) + " anos"
+        : (porteCao == "g") ? "O seu cão tem " + (idadeCao * 7) + " anos"
+        : "Porte do cão inválido!";
+
+    alert(mensagemFinal);
 
 </script>
